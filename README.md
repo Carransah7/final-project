@@ -1,1 +1,1 @@
-# final-project
+This was a school assignment. I had to make a website called "Computer Science Hub" for university students. It is a resource hub, providing information, resources and tools related to the students’ coursework. HTML and CSS were used to build and style the website. JavaScript was used to add search functionality and form validation and provide feedback to users. PHP was used to to handle file uploads and send email notifications.
