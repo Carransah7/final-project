@@ -1,0 +1,258 @@
+/*
+background-color: #001233;
+color: #efe0ca;
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* Body */
+body {
+  background-color: #001233;
+  color: #efe0ca;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+h4 {
+  margin-bottom: 5px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Nav Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #efe0ca;
+  color: #001233;
+  height: 3.125rem;
+  margin-bottom: 10px;
+}
+  
+.nav-links a {
+  color: #001233;
+  text-decoration: none;
+}
+
+/* Nav Menu */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+  list-style-type: none;
+}
+  
+.menu li:hover {
+  background-color: #efe0ca;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+  
+.menu li {
+  padding: 5px 14px;
+}
+  
+/* Dropdwon Menu */
+.services {
+  position: relative; 
+}
+  
+.dropdown {
+  background-color: #efe0ca;
+  padding: 1em 0;
+  position: absolute; /* With respect to parent */
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+  
+.dropdown li + li {
+  margin-top: 10px;
+}
+  
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+  
+.dropdown li:hover {
+  background-color: #efe0ca;
+}
+  
+.services:hover .dropdown {
+  display: block;
+}
+
+/* Responsive Nav Menu Checkbox Hack */
+input[type=checkbox] {
+  display: none;
+} 
+  
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+  
+/* Media Query */
+@media (max-width: 768px) {
+  .menu {
+    display:none;
+    position: absolute;
+    background-color: #efe0ca;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  
+  .menu li:hover {
+    display: inline-block;
+    background-color: #efe0ca;
+    transition: 0.3s ease;
+  }
+  
+  .menu li + li {
+    margin-top: 12px;
+  }
+  
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+  
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+  
+  .dropdown li:hover {
+    background-color: #efe0ca;
+  }
+}
+
+/* Latest News */
+.latest-news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.latest-news-items {
+  background-color: #efe0ca;
+  color: #001233;
+  padding: 20px;
+  flex-grow: 0.2;
+  flex-basis: 320px;
+}
+
+.latest-news-items h2, h3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.latest-news img {
+  width: 100%;
+}
+
+/* Testamonial */
+.testamonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.testamonial-items {
+  padding: 20px;
+  flex-grow: 0.2;
+  flex-basis: 320px;
+}
+
+.testamonial-items h2, h3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.testamonials img {
+  width: 100%;
+}
+
+/*-- Slider --*/
+.slider {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+  
+.slide {
+  display: none;
+}
+  
+.slide img {
+  border-style: none;
+}
+  
+.slide.active {
+  display: block;
+}
+
+/* Buttons */
+button {
+  background-color: #efe0ca;
+  color: #001233;
+  box-shadow: 2px 2px #001233;
+}
+.centre-buttons {
+  text-align: center;
+}
+
+.buttons {
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px;
+  gap: 20px;
+}

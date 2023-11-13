@@ -1,0 +1,24 @@
+/* Course Table */
+.courses-table {
+    border-collapse: collapse;
+}
+
+.courses-table, th, td {
+    border: 1px solid grey;
+    margin: 1%;
+    text-align: center;
+}
+
+th.courses-table, td.courses-table {
+    padding: 2%;
+}
+
+.odd {
+    background-color: rgba(128, 128, 128, 0.295);
+}
+
+.centre-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

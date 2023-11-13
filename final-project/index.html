@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Computer Science Hub</title>
+    <link rel="icon" type="image/x-icon" href="pictures/logo.jpeg">
+</head>
+<body>
+    <header>
+        <h1>Computer Science Hub</h1>        
+        <nav class="navbar">
+            <div class="logo"><img class="left hide" style="width: 3.312rem;" src="pictures/logo.jpeg" alt="Logo for Computer Science Hub">
+            </div>
+
+            <!-- Nav Menu -->
+            <ul class="nav-links">
+
+                <!-- Checkbox Hack -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        
+                <!-- Nav Menus -->
+                <div class="menu">
+                    <!-- Dropdown Menu -->
+                    <ul class="dropdown">
+                        <li><a href="/">Dropdown 1 </a></li>
+                        <li><a href="/">Dropdown 2</a></li>
+                        <li><a href="/">Dropdown 2</a></li>
+                        <li><a href="/">Dropdown 3</a></li>
+                        <li><a href="/">Dropdown 4</a></li>
+                    </ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="student-resources.html">Student Resources</a></li>
+                    <li><a href="contact_form.html">Contact Us</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <p>This is a resource hub for all things related to computer science coursework.</p>
+    
+    <!-- Latest News -->
+    <h2>Latest News</h2>
+    <section class="latest-news">
+        <div class="latest-news-items">
+            <h2>Clubs</h2>
+            <img src="pictures/computer-science-kid.jpeg" alt="Computer science club in session ">
+            <h3>Web Development</h3>
+            <ul>
+                <li>We meet every Tuesday @5pm in the computer science lab</li>
+                <li>Merch coming soon</li>
+            </ul>
+            <h3>Software Engineering</h3>
+            <ul>
+                <li>We meet every Thursday @6pm in the computer scinece lab</li>
+                <li>Merch coming soon</li>
+            </ul>
+        </div>
+
+        <div class="latest-news-items">
+            <h2>Tutoring</h2>
+            <img src="pictures/tutoring.jpeg" alt="A student getting tutored by a tutor">
+            <h3>Dates</h3>
+            <ul>
+                <li>Tutoring session will be held:</li>
+                <ul>
+                    <li>Monday 2pm-6pm</li>
+                    <li>Tuesday 2pm-4pm</li>
+                    <li>Thursday 3-pm-6pm</li>
+                </ul>
+                <h3>Sign Up</h3>
+                <li>Click <a href="https://www.uwindsor.ca/science/computerscience/1082/tutoring-and-academic-assistance" target="_blank">here</a> to sign up for tutoring</li>
+            </ul>
+        </div>
+
+        <div class="latest-news-items">
+            <h2>Internships</h2>
+            <img src="pictures/job-postings.jpeg" alt="Job postings board">
+            <h3>Job Postings</h3>
+            <ul>
+                <li>Check back soon for job postings</li>
+            </ul>
+        </div>
+
+        <div class="latest-news-items">
+            <h2>Important Dates</h2>
+            <img src="pictures/calendar.jpeg" alt="A calendar">
+            <h3>Dates</h3>
+            <ul>
+                <li>Reading week: October 8th-15th</li>
+                <li>Thanksgiving: October 9th</li>
+                <li>Last Day to Voluntarily Withdraw from Fall courses: Nov 15th</li>
+                <li>Last Day of classes: December 8th</li>
+                <li>Final Exams: December 11th-20th</li>
+                <li>Fees Due Winter semester: December 15th</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Testamonials-->
+    <h2>Testamonials</h2>
+    <section class="testamonials" id="slider">
+        <div class="testamonial-items slide active" id="buttons">
+            <img src="pictures/uni-student1.jpeg" alt="A university student looking at their phone">
+            <h3>Saskia</h3>
+            <p>- Computer Science Hub has great resources that have helped me time and time again</p>
+        </div>
+
+        <div class="testamonial-items slide">
+            <img src="pictures/uni-student2.jpg" alt="A university student sitting at a desk and smiling">
+            <h3>Aaron</h3>
+            <p>- The tutors are fantastic. I've gone up a whole letter grade since I started going to Comp Sci Club</p>        
+        </div>
+
+        <div class="testamonial-items slide">
+            <img src="pictures/uni-student3.jpg" alt="A university student in the library">
+            <h3>Steven</h3>
+            <p>- Computer Science Hub is a great place to meet new students and exchange ideas for projects</p>        
+        </div>
+    </section>
+
+    <!-- Buttons -->
+    <section class="centre-buttons">
+        <button class="buttons" onclick="changeSlide(-1)">Previous</button>
+        <button class="buttons" onclick="changeSlide(1)">Next</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <h4>Contact Info:</h4>
+        <h5>Email: computersciencehub@email.com</h5>
+        <h5>Phone: 999-999-9999</h5>
+        <div class="footer-items">
+            <a href="https://www.instagram.com/uwindsor/" title="Instagram" target="_blank">
+            <img src="assets/instagram.svg" alt='Instagram'></a>
+            <a href="https://twitter.com/uwindsor" title="Twitter" target="_blank">
+            <img src="assets/twitter.svg" alt='Twitter'></a>
+            <a href="https://www.youtube.com/user/uwindsor" title="Youtube" target="_blank">
+            <img src="assets/youtube.svg" alt='YouTube'></a>
+            <h5>&copy; 2023 Computer Science Hub</h5>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/picture_changer.js"></script>
+</body>
+</html>

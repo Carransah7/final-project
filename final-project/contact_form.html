@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="pictures/logo.jpeg">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>        
+        <nav class="navbar">
+            <div class="logo"><img class="left hide" style="width: 3.312rem;" src="pictures/logo.jpeg" alt="Logo for Computer Science Hub">
+            </div>
+
+            <!-- Nav Menu -->
+            <ul class="nav-links">
+
+                <!-- Checkbox Hack -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        
+                <!-- Nav Menus -->
+                <div class="menu">
+                    <!-- Dropdown Menu -->
+                    <ul class="dropdown">
+                        <li><a href="/">Dropdown 1 </a></li>
+                        <li><a href="/">Dropdown 2</a></li>
+                        <li><a href="/">Dropdown 2</a></li>
+                        <li><a href="/">Dropdown 3</a></li>
+                        <li><a href="/">Dropdown 4</a></li>
+                    </ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="student-resources.html">Student Resources</a></li>
+                    <li><a href="contact_form.html">Contact Us</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Please enter your info<h2>
+    <!--From-->
+    <form id="contactForm" action="process.php" method="post">
+        <label for="name">*Name:</label>
+        <input type="text" id="name" required name="name" required>
+        <span id="nameError" class="error"></span><br>
+
+        <label for="email">*Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="emailError" class="error"></span><br>
+
+        <label for="message">*Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <span id="messageError" class="error"></span><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+    <p>*reuired fields</p>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <h4>Contact Info:</h4>
+        <h5>Email: computersciencehub@email.com</h5>
+        <h5>Phone: 999-999-9999</h5>
+        <div class="footer-items">
+            <a href="https://www.instagram.com/uwindsor/" title="Instagram" target="_blank">
+            <img src="assets/instagram.svg" alt='Instagram'></a>
+            <a href="https://twitter.com/uwindsor" title="Twitter" target="_blank">
+            <img src="assets/twitter.svg" alt='Twitter'></a>
+            <a href="https://www.youtube.com/user/uwindsor" title="Youtube" target="_blank">
+            <img src="assets/youtube.svg" alt='YouTube'></a>
+            <h5>&copy; 2023 Computer Science Hub</h5>
+        </div>
+    </footer>
+
+    <!-- JS-->
+    <script src="js/contact.js"></script>
+</body>
+</html>

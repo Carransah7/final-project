@@ -1,0 +1,36 @@
+header {
+    width: 100%;
+}
+
+#tutorialList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+
+#tutorialList li {
+    background-color: #efe0ca;
+    color: #001233;
+    padding: 20px;
+    margin-bottom: 4px;
+}
+
+/* Search Input Styling */
+#searchInput {
+    max-width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    background-color: #efe0ca;
+    color: #001233;
+    font-size: 0.9rem;
+}
+
+
+/* Media Queries */
+@media (max-width: 600px) {
+    #searchInput {
+        font-size: 14px;
+    }
+}
